@@ -1,3 +1,52 @@
-body{ 
-  background-color: #000;
+@import "vars";
+@import "global";
+@import "fonts";
+
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  height: 91px;
+  align-items: center;
+}
+.header__text{
+margin-left: auto;
+margin-right: 50px;
+  span{
+    color: $orange;
+  }
+}
+.header__btn{
+  display: inline-block;
+  padding: 4px;
+  width: 72px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+.header__btn-login{
+  background-color: $green;
+}
+.header__btn-register{
+  margin-left: 7px;
+  background-color: $orange;
+}
+.header__menu{
+  background-color: $bg;
+}
+.menu{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.menu__list{
+  li{
+    display: inline-block;
+      & + li{
+        margin-left: 30px;
+      }
+    }
+  a{
+    font-size: 14px;
+    color: #fff;
+    }
 }
