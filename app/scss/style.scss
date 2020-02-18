@@ -285,6 +285,7 @@ padding: 110px 0;
         transition: all .5s;
         fill: #fff;
       }
+    }
   }
   &-images{
     width: 114px;
@@ -307,7 +308,41 @@ padding: 110px 0;
     @include f500;
   }
 }
-// advantages_item-images
-// advantages_item-title
-// advantages_item-text
 // end advantages
+//start author
+.author{
+  min-height: 750px;
+  background: no-repeat top/cover url(../images/author-bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $green;
+  max-width: 650px;
+  min-height: 215px;
+  color: #fff;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 60px;
+    margin-right: 45px;
+    min-width: 260px;
+    span{
+      @include f700;
+    }
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 36px;
+    background-color: #fff;
+    padding: 14px 40px;
+    margin-right: 60px;
+    white-space: nowrap;
+  }
+}
+// end author
