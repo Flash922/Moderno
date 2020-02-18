@@ -343,6 +343,43 @@ padding: 110px 0;
     padding: 14px 40px;
     margin-right: 60px;
     white-space: nowrap;
+    color: $bg;
+    @include f500;
   }
 }
 // end author
+// start tutorial
+.tutorial{
+  padding: 60px 0 120px;
+  &__title{
+    font-size: 36px;
+    @include f700;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  }
+  &__item{
+  max-width: 370px;
+  width: 100%;
+  }
+}
+.tutorial__item{
+  margin:0 15px;
+  &-images{
+    min-height: 270px;
+    background: center/cover no-repeat;
+  }
+  &-name{
+    text-align: center;
+    background-color: #f8f8f8;
+    font-size: 24px;
+    @include f700;
+    color: $bg;
+    padding: 30px 10px;
+  }
+}
+  
+// end tutorial
