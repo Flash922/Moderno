@@ -70,11 +70,11 @@ margin-right: 50px;
   &-title{
     margin-bottom: 35px;
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
   }
   &-text{
     margin-bottom: 50px;
-    font-weight: 500;
+    @include f500;
     font-size: 20px;
   }
   &-form{
@@ -90,10 +90,10 @@ margin-right: 50px;
       height: 56px;
       border: none;
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       &::placeholder{
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
     button{
@@ -160,7 +160,7 @@ background-color: $grey;
     line-height: 35px;
     display: block;
     font-size: 18px;
-    font-weight: 500;
+    @include f500;
   } 
   &-category{
     font-size: 14px;
@@ -169,7 +169,7 @@ background-color: $grey;
   }
   &-price{
     color: $bg;
-    font-weight: 700;
+    @include f700;
   }
   &-info{
     display: flex;
@@ -195,7 +195,7 @@ background-color: $grey;
     }
     span{
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
   }
   &-star{
@@ -255,3 +255,59 @@ background-color: $grey;
   }
 }
 // end product-slider
+// start advantages
+.advantages{
+background-color: $bg;
+padding: 110px 0;
+}
+.advantages__title{
+  color: #fff;
+}
+.advantages__inner{
+  display: flex;
+  justify-content: center;
+}
+.advantages_item{
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+  &:hover{
+    .advantages_item-images{
+      transition: all .5s;
+      background-color: $green;
+    }
+    .advantages_item-title{
+      transition: all .3s;
+      color: $green;
+    }
+    .advantages_item-images{
+      g{
+        transition: all .5s;
+        fill: #fff;
+      }
+  }
+  &-images{
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+  &-title{
+    font-size: 24px;
+    color: #fff;
+    @include f500;
+    margin-bottom: 35px;
+  }
+  &-text{
+    font-size: 15px;
+    @include f500;
+  }
+}
+// advantages_item-images
+// advantages_item-title
+// advantages_item-text
+// end advantages
