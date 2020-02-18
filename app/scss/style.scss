@@ -182,6 +182,7 @@ background-color: $grey;
     font-size: 14px;
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar{
       display: inline-block;
       width: 30px;
@@ -196,8 +197,11 @@ background-color: $grey;
       font-size: 14px;
       font-weight: 500;
     }
-    &-star{
-      display: block;
+  }
+  &-star{
+    span{
+      color: $bg;
+      font-size: 12px;
     }
   }
 }
@@ -220,3 +224,34 @@ background-color: $grey;
   }
 
 //end product
+//start product-slider
+.product-slider{
+  padding: 120px 0;
+  .slick-dots{
+    text-align: center;
+    margin-top: 50px;
+    li{
+      display: inline-block;
+      margin: 3px;
+      &.slick-active{
+        button{
+        background-color: #8bc34a;}
+      }
+      button{
+        border-radius: 50%;
+        border: #b1b1b1 solid 1px;
+        background-color: #e8e8e8;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        outline: none;
+        cursor: pointer;
+        .slick-active{
+        background-color: #8bc34a;
+        }
+      }
+    }
+    
+  }
+}
+// end product-slider
