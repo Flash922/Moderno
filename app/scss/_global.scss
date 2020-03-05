@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  height: 100%;
 }
 *, *::before, *::after{
   box-sizing: inherit;
@@ -19,16 +20,32 @@ body{
   font-size: 15px;
   line-height: 24px;
   color: $text;
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content{
+  flex: 1 0 auto;
+}
+.footer{
+  flex: 0 0 auto;
 }
 .container{
   max-width: 1200px;
   margin: 0 auto;
   padding:0 15px;
+  // background-color: $grey;
 }
 .container-fluid{
   max-width: 100%;
   margin: 0 auto;
   padding:0 30px;
+}
+.container-aside{
+  max-width: 270px;
 }
 .title{
   text-align: center;
@@ -37,6 +54,12 @@ body{
   color: $bg;
   font-size: 36px;
   margin-bottom: 30px;
+}
+.subtitle{
+  font-size: 20px;
+  line-height: 26px;
+  @include f700;
+  color: $bg;
 }
 
 @media (max-width: 720px){
